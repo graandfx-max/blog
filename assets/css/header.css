@@ -1,0 +1,298 @@
+/* ========================================
+   HEADER.CSS - HEADER STYLING
+   Top Bar dan Navigation Styling
+   ======================================== */
+
+/* ========================================
+   TOP BAR STYLING
+   ======================================== */
+.top-bar {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--secondary);
+    position: relative;
+    z-index: 90;
+}
+
+.top-bar-left,
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.top-bar-item i {
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+.top-bar-item a {
+    color: var(--white);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.top-bar-item a:hover {
+    color: var(--accent);
+}
+
+/* ========================================
+   NAVBAR SECTION
+   ======================================== */
+.navbar-section {
+    background-color: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 99;
+}
+
+.navbar-section.sticky-top {
+    top: 0;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+/* ========================================
+   BRAND STYLING
+   ======================================== */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-logo {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 3px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.school-name {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.school-address {
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin: 0;
+    line-height: 1;
+}
+
+/* ========================================
+   HAMBURGER MENU
+   ======================================== */
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.75rem;
+    transition: var(--transition);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%230D47A1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%230D47A1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3e%3c/svg%3e");
+}
+
+/* ========================================
+   NAVIGATION MENU
+   ======================================== */
+.navbar-nav {
+    gap: 0.5rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+    background-color: rgba(13, 71, 161, 0.05);
+}
+
+.nav-link.active {
+    color: var(--primary) !important;
+    background-color: rgba(13, 71, 161, 0.1);
+    border-bottom: 2px solid var(--primary);
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+}
+
+/* ========================================
+   RESPONSIVE NAVBAR
+   ======================================== */
+@media (max-width: 991px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .navbar-collapse {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .nav-link {
+        padding: 0.75rem 1rem !important;
+        width: 100%;
+    }
+
+    .school-name {
+        font-size: 1.1rem;
+    }
+
+    .school-address {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-container {
+        gap: 0.75rem;
+    }
+
+    .brand-logo {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    .school-name {
+        font-size: 1rem;
+    }
+
+    .school-address {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0.75rem 0;
+    }
+}
+
+/* ========================================
+   ACTIVE NAV LINK INDICATOR
+   ======================================== */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 1rem;
+    right: 1rem;
+    height: 3px;
+    background-color: var(--accent);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+/* ========================================
+   SOCIAL LINKS IN TOP BAR
+   ======================================== */
+.top-bar .social-links {
+    gap: 1rem;
+}
+
+.top-bar .social-links a {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.top-bar .social-links a:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+    transform: scale(1.1);
+}

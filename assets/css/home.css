@@ -1,0 +1,111 @@
+/* Home-specific styles: Sambutan, Statistik, Visi & Misi, Keunggulan, PPDB CTA */
+
+.welcome-section .headmaster-photo img{
+    max-width:100%;
+    border-radius:12px;
+    box-shadow: 0 8px 20px rgba(13,110,253,0.12);
+}
+
+.welcome-section .section-title{
+    font-size:1.8rem;
+    margin-bottom:1rem;
+}
+
+.home-statistics .stat-box{
+    background: #fff;
+    border-radius:12px;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.home-statistics .stat-box:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(13,110,253,0.08);
+}
+.home-statistics .stat-box .counter{
+    font-size:2rem;
+    font-weight:700;
+    margin:0.5rem 0;
+}
+
+.visi-misi-section .card{
+    border: none;
+}
+
+.adv-card{
+    border-radius:12px;
+    transition: transform .25s ease, box-shadow .25s ease;
+    background: #f8fafc;
+}
+.adv-card:hover{
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 18px 40px rgba(2,6,23,0.06);
+}
+
+.ppdb-cta-section{
+    border-radius:8px;
+}
+
+@media (max-width:767px){
+    .welcome-section .headmaster-photo{ text-align:center; }
+    .welcome-section .headmaster-photo img{ width:220px; }
+    .ppdb-cta-section .text-md-end{ text-align:center!important; margin-top:1rem; }
+}
+
+.visi-misi-section .card,
+.program-section .adv-card,
+.prestasi-section .achievement-card,
+.ppdb-cta-section {
+    border-radius: 20px;
+}
+
+.program-section .program-card {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.program-section .program-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(13,110,253,0.12);
+}
+
+.program-section .program-card i {
+    width: 88px;
+    height: 88px;
+    line-height: 88px;
+    border-radius: 50%;
+    background: rgba(13,110,253,0.08);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prestasi-section .achievement-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.prestasi-section .achievement-content h5 {
+    margin-bottom: 0.75rem;
+}
+
+.ppdb-cta-section {
+    background: linear-gradient(135deg, #0b5ed7 0%, #3b82f6 100%);
+    box-shadow: 0 20px 50px rgba(13,110,253,0.2);
+}
+
+.ppdb-cta-section h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 700;
+}
+
+.ppdb-cta-section p {
+    font-size: 1.05rem;
+}
+
+.section-subtitle {
+    color: #6c757d;
+}
+
+.visi-misi-section .card,
+.home-statistics .stat-box,
+.prestasi-section .achievement-card {
+    background: #ffffff;
+}

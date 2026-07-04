@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- ====================================
+    META TAGS & DOCUMENT CONFIGURATION
+    ==================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UPT SDN 53 Pinrang - Sekolah Dasar Negeri dengan komitmen pendidikan berkualitas dan berwawasan lingkungan.">
+    <meta name="keywords" content="sekolah, pinrang, sdnegeri, pendidikan, akademik">
+    <meta name="author" content="UPT SDN 53 Pinrang">
+    <meta property="og:title" content="UPT SDN 53 Pinrang - Sekolah Dasar Negeri">
+    <meta property="og:description" content="Sekolah Dasar Negeri dengan komitmen pendidikan berkualitas dan berwawasan lingkungan.">
+    <meta property="og:type" content="website">
+
+    <title>UPT SDN 53 Pinrang | Sekolah Dasar Negeri</title>
+
+    <!-- ====================================
+    BOOTSTRAP 5 CSS
+    ==================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ====================================
+    BOOTSTRAP ICONS
+    ==================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- ====================================
+    GOOGLE FONTS - POPPINS
+    ==================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ====================================
+    SWIPER JS CSS
+    ==================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- AOS ANIMATIONS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- ====================================
+    CUSTOM STYLESHEET CSS
+    ==================================== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+</head>
+<body>
+    <!-- ====================================
+    TOP BAR
+    ==================================== -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="top-bar-left">
+                        <span class="top-bar-item">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@sdnegeri53pinrang.sch.id">info@sdnegeri53pinrang.sch.id</a>
+                        </span>
+                        <span class="top-bar-item">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+6285123456789">(+62) 851-2345-6789</a>
+                        </span>
+                        <span class="top-bar-item">
+                            <i class="bi bi-clock"></i>
+                            Jam Operasional: 07:00 - 15:00
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="top-bar-right">
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/sdnegeri53pinrang" target="_blank" rel="noopener noreferrer" title="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sdnegeri53pinrang" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/c/sdnegeri53pinrang" target="_blank" rel="noopener noreferrer" title="YouTube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================
+    HEADER / NAVBAR
+    ==================================== -->
+    <header class="navbar-section sticky-top" id="headerNav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo dan Nama Sekolah -->
+                <a class="navbar-brand" href="index.html">
+                    <div class="brand-container">
+                        <img src="assets/images/logo.png" alt="Logo SDN 53 Pinrang" class="brand-logo">
+                        <div class="brand-text">
+                            <h1 class="school-name">UPT SDN 53 Pinrang</h1>
+                            <p class="school-address">Pinrang, Sulawesi Selatan</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Hamburger Menu Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="hamburgerBtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="navMenu">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">
+                                <i class="bi bi-house-door"></i> Beranda
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#profil" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-info-circle"></i> Profil
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                <li><a class="dropdown-item" href="#profil"><i class="bi bi-graph-up"></i> Statistik Sekolah</a></li>
+                                <li><a class="dropdown-item" href="#guru"><i class="bi bi-people"></i> Tim Pendidik</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#kontak"><i class="bi bi-telephone"></i> Hubungi Kami</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#akademik" id="akademikDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-book"></i> Akademik
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="akademikDropdown">
+                                <li><a class="dropdown-item" href="#akademik"><i class="bi bi-star"></i> Keunggulan Kami</a></li>
+                                <li><a class="dropdown-item" href="#ppdb"><i class="bi bi-file-earmark-check"></i> PPDB Online</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#download"><i class="bi bi-download"></i> Download Dokumen</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeri">
+                                <i class="bi bi-images"></i> Galeri
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontak">
+                                <i class="bi bi-chat-dots"></i> Kontak
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ====================================
+    HERO SECTION - SLIDER SWIPER
+    ==================================== -->
+    <section class="hero" id="home">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('assets/images/hero-1.jpg');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="container h-100 d-flex align-items-center justify-content-center">
+                            <div class="hero-text text-center">
+                                <h1 class="hero-title fade-in-up">Selamat Datang di UPT SDN 53 Pinrang</h1>
+                                <p class="hero-subtitle fade-in-up" style="animation-delay: 0.2s;">Membangun Generasi Unggul, Cerdas, dan Berkarakter Mulia</p>
+                                <div class="hero-buttons fade-in-up" style="animation-delay: 0.4s;">
+                                    <a href="#ppdb" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-file-earmark-check"></i> PPDB Online
+                                    </a>
+                                    <a href="#profil" class="btn btn-outline-light btn-lg">
+                                        <i class="bi bi-info-circle"></i> Profil Sekolah
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('assets/images/hero-2.jpg');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="container h-100 d-flex align-items-center justify-content-center">
+                            <div class="hero-text text-center">
+                                <h1 class="hero-title fade-in-up">Pendidikan Berkualitas untuk Semua</h1>
+                                <p class="hero-subtitle fade-in-up" style="animation-delay: 0.2s;">Dengan fasilitas lengkap dan guru profesional berpengalaman</p>
+                                <div class="hero-buttons fade-in-up" style="animation-delay: 0.4s;">
+                                    <a href="#akademik" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-star"></i> Keunggulan Kami
+                                    </a>
+                                    <a href="#guru" class="btn btn-outline-light btn-lg">
+                                        <i class="bi bi-people"></i> Tim Pendidik
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('assets/images/hero-3.jpg');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="container h-100 d-flex align-items-center justify-content-center">
+                            <div class="hero-text text-center">
+                                <h1 class="hero-title fade-in-up">Bersama Membangun Masa Depan</h1>
+                                <p class="hero-subtitle fade-in-up" style="animation-delay: 0.2s;">Lingkungan yang mendukung, siswa yang berprestasi</p>
+                                <div class="hero-buttons fade-in-up" style="animation-delay: 0.4s;">
+                                    <a href="#galeri" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-images"></i> Galeri Kegiatan
+                                    </a>
+                                    <a href="#kontak" class="btn btn-outline-light btn-lg">
+                                        <i class="bi bi-chat-dots"></i> Hubungi Kami
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    BERITA TERBARU SECTION
+    ==================================== -->
+    <section class="news-section py-5" id="berita">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Berita & Informasi</h2>
+                <p class="section-subtitle">Informasi terbaru sekolah</p>
+            </div>
+
+            <!-- News cards placeholder, populated oleh JavaScript -->
+            <div class="row g-4" id="newsCardsContainer"></div>
+
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary btn-lg btn-news">Lihat Semua Berita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    PENGUMUMAN SECTION
+    ==================================== -->
+    <section class="announcement-section py-5 bg-light" id="pengumuman">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Pengumuman</h2>
+                <p class="section-subtitle">Informasi penting untuk siswa dan orang tua</p>
+            </div>
+            <div class="row g-4" id="announcementCardsContainer">
+                <!-- Announcement cards akan dirender oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    DOWNLOAD RESOURCES SECTION
+    ==================================== -->
+    <section class="download-resource-section py-5" id="download-resources">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Download</h2>
+                <p class="section-subtitle">Dokumen penting yang dapat diunduh</p>
+            </div>
+            <div class="row g-4" id="downloadCardsContainer">
+                <!-- Download resource cards akan dirender oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    HOME EXTRA SECTIONS (SAMBUTAN, STATISTIK, VISI & MISI, KEUNGGULAN, CTA)
+    Inserted below Hero per request. Uses Bootstrap grid and AOS attributes.
+    ==================================== -->
+    <section class="welcome-section py-5" id="sambutan">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="headmaster-photo">
+                        <img src="https://via.placeholder.com/600x600?text=Foto+Kepala+Sekolah" alt="Foto Kepala Sekolah" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <h2 class="section-title">Sambutan Kepala Sekolah</h2>
+                    <h5 class="mb-3">Drs. H. Andi Mahmud, M.Pd.</h5>
+                    <p>Assalamu'alaikum warahmatullahi wabarakatuh. Selamat datang di UPT SDN 53 Pinrang, sekolah dasar yang berdedikasi untuk membentuk generasi berkarakter dan berkualitas.</p>
+                    <p>Kami terus berupaya meningkatkan kualitas pembelajaran melalui kurikulum kreatif, lingkungan ramah anak, dan pembinaan akhlak yang menjadi landasan pendidikan.</p>
+                    <p>Terima kasih atas dukungan orang tua dan masyarakat. Bersama kita tumbuhkan nilai kebersamaan, prestasi, dan cinta lingkungan di sekolah tercinta.</p>
+                    <a href="#profil" class="btn btn-outline-primary mt-3">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visi-misi-section py-5 bg-light" id="visi-misi">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card shadow-sm h-100 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-eye-fill fs-2 text-primary me-3"></i>
+                                <h4 class="card-title mb-0">Visi</h4>
+                            </div>
+                            <p>Menjadi lembaga pendidikan unggul yang mencetak generasi cerdas, beriman, dan berakhlak mulia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shadow-sm h-100 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-list-check fs-2 text-primary me-3"></i>
+                                <h4 class="card-title mb-0">Misi</h4>
+                            </div>
+                            <ul class="mb-0 ps-3">
+                                <li>Menyelenggarakan pendidikan berkualitas dengan pendekatan karakter dan lingkungan.</li>
+                                <li>Meningkatkan kompetensi guru melalui pelatihan inovatif dan profesional.</li>
+                                <li>Membentuk siswa yang disiplin, kreatif, dan bertanggung jawab.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-section py-5" id="keunggulan">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Program Unggulan</h2>
+                <p class="section-subtitle">Inisiatif terbaik untuk mendukung bakat dan kompetensi siswa</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4" data-aos="fade-up">
+                    <div class="adv-card p-4 h-100 text-center program-card">
+                        <i class="bi bi-house-heart fs-1 text-primary mb-3"></i>
+                        <h5>Sekolah Ramah Anak</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="adv-card p-4 h-100 text-center program-card">
+                        <i class="bi bi-book-half fs-1 text-primary mb-3"></i>
+                        <h5>Literasi</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="adv-card p-4 h-100 text-center program-card">
+                        <i class="bi bi-tree fs-1 text-primary mb-3"></i>
+                        <h5>Adiwiyata</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="adv-card p-4 h-100 text-center program-card">
+                        <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
+                        <h5>Digital School</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="adv-card p-4 h-100 text-center program-card">
+                        <i class="bi bi-people-fill fs-1 text-primary mb-3"></i>
+                        <h5>Ekstrakurikuler</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="250">
+                    <div class="adv-card p-4 h-100 text-center program-card">
+                        <i class="bi bi-trophy fs-1 text-primary mb-3"></i>
+                        <h5>Prestasi</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-statistics py-5 bg-light" id="home-statistik">
+        <div class="container">
+            <div class="section-header text-center mb-4" data-aos="fade-up">
+                <h2 class="section-title">Statistik Sekolah</h2>
+                <p class="section-subtitle">Angka penting yang mencerminkan kualitas sekolah</p>
+            </div>
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="stat-box p-4">
+                        <i class="bi bi-person-badge display-6 text-primary"></i>
+                        <h3 class="counter" data-target="45">0</h3>
+                        <p>Guru</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-box p-4">
+                        <i class="bi bi-people-fill display-6 text-primary"></i>
+                        <h3 class="counter" data-target="850">0</h3>
+                        <p>Siswa</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="stat-box p-4">
+                        <i class="bi bi-door-open display-6 text-primary"></i>
+                        <h3 class="counter" data-target="28">0</h3>
+                        <p>Rombel</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-box p-4">
+                        <i class="bi bi-award display-6 text-primary"></i>
+                        <h3 class="counter" data-target="127">0</h3>
+                        <p>Prestasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="prestasi-section py-5" id="prestasi">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Prestasi Sekolah</h2>
+                <p class="section-subtitle">Penghargaan siswa di berbagai bidang</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="achievement-card shadow-sm h-100">
+                        <div class="achievement-image overflow-hidden">
+                            <img src="https://via.placeholder.com/600x400?text=Juara+Akademik" alt="Juara Akademik" class="img-fluid">
+                        </div>
+                        <div class="achievement-content p-4 bg-white">
+                            <h5>Juara Akademik</h5>
+                            <p>Prestasi dalam lomba akademik tingkat kabupaten dan provinsi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-card shadow-sm h-100">
+                        <div class="achievement-image overflow-hidden">
+                            <img src="https://via.placeholder.com/600x400?text=Juara+Olahraga" alt="Juara Olahraga" class="img-fluid">
+                        </div>
+                        <div class="achievement-content p-4 bg-white">
+                            <h5>Juara Olahraga</h5>
+                            <p>Tim olahraga sekolah meraih medali pada kompetisi antar sekolah.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="achievement-card shadow-sm h-100">
+                        <div class="achievement-image overflow-hidden">
+                            <img src="https://via.placeholder.com/600x400?text=Juara+Seni" alt="Juara Seni" class="img-fluid">
+                        </div>
+                        <div class="achievement-content p-4 bg-white">
+                            <h5>Juara Seni</h5>
+                            <p>Siswa berprestasi dalam bidang seni tari, musik, dan teater.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ppdb-cta-section py-5 text-white" id="ppdb-cta" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8" data-aos="fade-right">
+                    <h2 class="mb-3">PPDB Online 2024/2025</h2>
+                    <p class="mb-0">Segera daftarkan putra-putri Anda di UPT SDN 53 Pinrang untuk mendapatkan pendidikan berkualitas dan lingkungan sekolah yang aman.</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0" data-aos="fade-left">
+                    <a href="#ppdb" class="btn btn-light btn-lg">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    RUNNING TEXT
+    ==================================== -->
+    <div class="running-text-container">
+        <div class="running-text">
+            <span class="running-text-label">📢 Pengumuman:</span>
+            <div class="running-text-content" id="runningText">
+                <span class="running-item">PPDB Tahun Ajaran 2024/2025 Telah Dibuka! Daftar Sekarang Juga.</span>
+                <span class="running-item">Selamat kepada Siswa kelas VI yang telah diterima di SMP Negeri. Semoga sukses!</span>
+                <span class="running-item">Perpustakaan Digital SDN 53 Pinrang Dapat Diakses 24 Jam Melalui Web Portal.</span>
+                <span class="running-item">Program Beasiswa Prestasi Tersedia untuk Siswa Berprestasi. Hubungi Bagian Kurikulum.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================
+    FEATURES SECTION
+    ==================================== -->
+    <section class="features-section py-5" id="akademik">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Keunggulan Kami</h2>
+                <p class="section-subtitle">Komitmen kami untuk memberikan pendidikan terbaik</p>
+            </div>
+            <div class="row g-4">
+                <!-- Feature Card 1: Guru Profesional -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-person-badge"></i>
+                        </div>
+                        <h3 class="feature-title">Guru Profesional</h3>
+                        <p class="feature-description">
+                            Tim pengajar bersertifikat dengan pengalaman lebih dari 10 tahun di bidang pendidikan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 2: Sekolah Adiwiyata -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-leaf"></i>
+                        </div>
+                        <h3 class="feature-title">Sekolah Adiwiyata</h3>
+                        <p class="feature-description">
+                            Komitmen penuh terhadap lingkungan hidup dengan program-program keberlanjutan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 3: Perpustakaan Modern -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <h3 class="feature-title">Perpustakaan</h3>
+                        <p class="feature-description">
+                            Perpustakaan digital dengan koleksi lebih dari 5000 judul buku dan akses online 24 jam.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature Card 4: Laboratorium -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-microscope"></i>
+                        </div>
+                        <h3 class="feature-title">Laboratorium</h3>
+                        <p class="feature-description">
+                            Laboratorium IPA lengkap dengan peralatan modern untuk mendukung pembelajaran praktis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    STATISTICS SECTION
+    ==================================== -->
+    <section class="statistics-section py-5" id="profil">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="stats-content">
+                        <h2 class="section-title mb-4">Statistik Sekolah</h2>
+                        <p class="stats-description mb-4">
+                            UPT SDN 53 Pinrang memiliki prestasi yang terus berkembang dengan dukungan penuh dari guru, siswa, dan orang tua.
+                        </p>
+                        <div class="stats-list">
+                            <div class="stat-item">
+                                <span class="stat-label">Akreditasi</span>
+                                <span class="stat-value">A</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Sertifikasi</span>
+                                <span class="stat-value">ISO 9001</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <!-- Stat Card 1: Guru -->
+                        <div class="col-md-6">
+                            <div class="stat-card">
+                                <div class="stat-card-icon">
+                                    <i class="bi bi-person-circle"></i>
+                                </div>
+                                <h3 class="stat-number">45</h3>
+                                <p class="stat-text">Jumlah Guru</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat Card 2: Siswa -->
+                        <div class="col-md-6">
+                            <div class="stat-card">
+                                <div class="stat-card-icon">
+                                    <i class="bi bi-people-fill"></i>
+                                </div>
+                                <h3 class="stat-number">850</h3>
+                                <p class="stat-text">Jumlah Siswa</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat Card 3: Kelas -->
+                        <div class="col-md-6">
+                            <div class="stat-card">
+                                <div class="stat-card-icon">
+                                    <i class="bi bi-door-open"></i>
+                                </div>
+                                <h3 class="stat-number">28</h3>
+                                <p class="stat-text">Jumlah Kelas</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat Card 4: Prestasi -->
+                        <div class="col-md-6">
+                            <div class="stat-card">
+                                <div class="stat-card-icon">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <h3 class="stat-number">127</h3>
+                                <p class="stat-text">Total Prestasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    PROFILE SECTION / GURU
+    ==================================== -->
+    <section class="profile-section py-5" id="guru">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Tim Pendidik</h2>
+                <p class="section-subtitle">Guru-guru profesional kami siap memberikan pendidikan terbaik</p>
+            </div>
+            <div class="row g-4">
+                <!-- Teacher Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="teacher-card">
+                        <div class="teacher-image">
+                            <img src="assets/images/teacher-1.jpg" alt="Guru 1" class="img-fluid">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Ibu Siti Nurhaliza</h3>
+                            <p class="teacher-position">Kepala Sekolah</p>
+                            <p class="teacher-expertise">Pendidikan & Manajemen Sekolah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="teacher-card">
+                        <div class="teacher-image">
+                            <img src="assets/images/teacher-2.jpg" alt="Guru 2" class="img-fluid">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Bapak Ahmad Wijaya</h3>
+                            <p class="teacher-position">Wakil Kepala Sekolah</p>
+                            <p class="teacher-expertise">Kurikulum & Akademik</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="teacher-card">
+                        <div class="teacher-image">
+                            <img src="assets/images/teacher-3.jpg" alt="Guru 3" class="img-fluid">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>Ibu Dwi Handayani</h3>
+                            <p class="teacher-position">Guru Kelas VI</p>
+                            <p class="teacher-expertise">Matematika & Bahasa Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    GALLERY SECTION
+    ==================================== -->
+    <section class="gallery-section py-5" id="galeri">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Galeri Sekolah</h2>
+                <p class="section-subtitle">Kegiatan dan momen berharga di SDN 53 Pinrang</p>
+            </div>
+            <div class="row g-3">
+                <!-- Gallery Item 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-1.jpg" alt="Upacara Bendera" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Upacara Bendera</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-2.jpg" alt="Pembelajaran Interaktif" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Pembelajaran Interaktif</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-3.jpg" alt="Olahraga" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Kegiatan Olahraga</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-4.jpg" alt="Ekstrakurikuler" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Program Ekstrakurikuler</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-5.jpg" alt="Lingkungan Hijau" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Program Lingkungan Hijau</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-6.jpg" alt="Acara Sekolah" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Acara Khusus Sekolah</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    PPDB SECTION
+    ==================================== -->
+    <section class="ppdb-section py-5 bg-light" id="ppdb">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">PPDB Online</h2>
+                <p class="section-subtitle">Penerimaan Peserta Didik Baru Tahun Ajaran 2024/2025</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8 mx-auto">
+                    <div class="ppdb-info-card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="ppdb-item">
+                                    <div class="ppdb-icon">
+                                        <i class="bi bi-calendar-event"></i>
+                                    </div>
+                                    <h4>Jadwal Pendaftaran</h4>
+                                    <p>1 Juni - 30 Juni 2024</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="ppdb-item">
+                                    <div class="ppdb-icon">
+                                        <i class="bi bi-mortarboard"></i>
+                                    </div>
+                                    <h4>Kuota Penerimaan</h4>
+                                    <p>200 Siswa Baru</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="ppdb-item">
+                                    <div class="ppdb-icon">
+                                        <i class="bi bi-link"></i>
+                                    </div>
+                                    <h4>Link Pendaftaran</h4>
+                                    <p><a href="https://ppdb.pinrang.sch.id" target="_blank" class="text-primary">ppdb.pinrang.sch.id</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="ppdb-item">
+                                    <div class="ppdb-icon">
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                    <h4>Persyaratan</h4>
+                                    <p>Lihat file unduhan di bawah</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="https://ppdb.pinrang.sch.id" class="btn btn-primary btn-lg" target="_blank">
+                                <i class="bi bi-arrow-right"></i> Daftar Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    DOWNLOAD SECTION
+    ==================================== -->
+    <section class="download-section py-5" id="download">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Download</h2>
+                <p class="section-subtitle">Dokumen dan formulir penting dari sekolah kami</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="download-card">
+                        <div class="download-icon">
+                            <i class="bi bi-file-pdf"></i>
+                        </div>
+                        <h4>Brosur Sekolah</h4>
+                        <p>Informasi lengkap tentang SDN 53 Pinrang</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="download-card">
+                        <div class="download-icon">
+                            <i class="bi bi-file-pdf"></i>
+                        </div>
+                        <h4>Kurikulum Sekolah</h4>
+                        <p>Struktur dan rencana kurikulum 2024/2025</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="download-card">
+                        <div class="download-icon">
+                            <i class="bi bi-file-pdf"></i>
+                        </div>
+                        <h4>Formulir PPDB</h4>
+                        <p>Formulir pendaftaran siswa baru</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="download-card">
+                        <div class="download-icon">
+                            <i class="bi bi-file-pdf"></i>
+                        </div>
+                        <h4>Tata Tertib Sekolah</h4>
+                        <p>Peraturan dan tata tertib untuk siswa</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    CONTACT SECTION
+    ==================================== -->
+    <section class="contact-section py-5 bg-light" id="kontak">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Tim kami siap membantu Anda dengan pertanyaan apapun</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="contactName" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="Masukkan email Anda" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactPhone" class="form-label">Nomor Telepon</label>
+                                <input type="tel" class="form-control" id="contactPhone" placeholder="Masukkan nomor telepon">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label">Subjek</label>
+                                <input type="text" class="form-control" id="contactSubject" placeholder="Masukkan subjek pesan" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Masukkan pesan Anda" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="bi bi-send"></i> Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-item mb-4">
+                            <h4 class="mb-3">
+                                <i class="bi bi-geo-alt"></i> Alamat
+                            </h4>
+                            <p>
+                                Jl. Pendidikan No. 53<br>
+                                Kelurahan Pinrang<br>
+                                Kecamatan Pinrang<br>
+                                Kabupaten Pinrang<br>
+                                Provinsi Sulawesi Selatan 91114
+                            </p>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <h4 class="mb-3">
+                                <i class="bi bi-telephone"></i> Kontak
+                            </h4>
+                            <p>
+                                Telepon: <a href="tel:+6285123456789">(+62) 851-2345-6789</a><br>
+                                WhatsApp: <a href="https://wa.me/6285123456789" target="_blank">(+62) 851-2345-6789</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <h4 class="mb-3">
+                                <i class="bi bi-envelope"></i> Email
+                            </h4>
+                            <p>
+                                <a href="mailto:info@sdnegeri53pinrang.sch.id">info@sdnegeri53pinrang.sch.id</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h4 class="mb-3">
+                                <i class="bi bi-calendar"></i> Jam Operasional
+                            </h4>
+                            <p>
+                                Senin - Jumat: 07:00 - 15:00 WIT<br>
+                                Sabtu & Minggu: Tutup
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Placeholder -->
+                    <div class="maps-container mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.0123456789!2d120.0123456!3d-8.8888888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbeabcdef0000%3A0x1234567890abcdef!2sSDN%2053%20Pinrang!5e0!3m2!1sid!2sid!4v1234567890" 
+                                style="width: 100%; height: 300px; border: 0; border-radius: 12px; margin-top: 20px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    FOOTER
+    ==================================== -->
+    <footer class="footer-section py-4">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Tentang Sekolah</h5>
+                    <p class="footer-text">
+                        UPT SDN 53 Pinrang adalah sekolah dasar negeri yang berkomitmen memberikan pendidikan berkualitas dengan berwawasan lingkungan.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Menu Cepat</h5>
+                    <ul class="footer-list">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#profil">Profil</a></li>
+                        <li><a href="#akademik">Akademik</a></li>
+                        <li><a href="#ppdb">PPDB</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Informasi</h5>
+                    <ul class="footer-list">
+                        <li><i class="bi bi-telephone"></i> <a href="tel:+6285123456789">(+62) 851-2345-6789</a></li>
+                        <li><i class="bi bi-envelope"></i> <a href="mailto:info@sdnegeri53pinrang.sch.id">info@sdnegeri53pinrang.sch.id</a></li>
+                        <li><i class="bi bi-geo-alt"></i> Jl. Pendidikan No. 53, Pinrang</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Ikuti Kami</h5>
+                    <div class="social-links footer-social">
+                        <a href="https://www.facebook.com/sdnegeri53pinrang" target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sdnegeri53pinrang" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/sdnegeri53pinrang" target="_blank" rel="noopener noreferrer" title="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        &copy; 2024 UPT SDN 53 Pinrang. Semua Hak Dilindungi.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="footer-copyright">
+                        Dikembangkan dengan <i class="bi bi-heart-fill text-danger"></i> oleh Tim IT
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====================================
+    SCROLL TO TOP BUTTON
+    ==================================== -->
+    <button class="scroll-to-top" id="scrollToTop" title="Kembali ke atas">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- ====================================
+    FLOATING WHATSAPP BUTTON
+    ==================================== -->
+    <a href="https://wa.me/6285123456789" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat di WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- ====================================
+    BOOTSTRAP 5 JAVASCRIPT
+    ==================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ====================================
+    SWIPER JS
+    ==================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS ANIMATIONS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- ====================================
+    CUSTOM JAVASCRIPT
+    ==================================== -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/news.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/counter.js"></script>
+</body>
+</html>
